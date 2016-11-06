@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
   <link rel="stylesheet" href="css/style-reg.css" media="screen" title="no title">
   <title>Registration</title>
@@ -25,19 +26,26 @@
   </div>
 
   <div class="div-form">
+    <form action="https://google.com" method="post">
     <div class="form-head">
       This is the address where registration materials will be sent and the
       name that will appear on your badge.
     </div>
     <div class="form-inputs">
       <div class="div-form-col">
-        <table class="table-left">
+        <table>
           <tr>
             <td>
               <label for="first-name">First Name*</label>
             </td>
             <td>
-              <input type="text" id="first-name" value="">
+              <input type="text" name="first-name" id="first-name" minlength="3" maxlength="16" required>
+            </td>
+            <td>
+              <label for="last-name">Last Name*</label>
+            </td>
+            <td>
+              <input type="text" name="last-name" id="last-name" minlength="3" maxlength="16" required>
             </td>
           </tr>
           <tr>
@@ -45,7 +53,13 @@
               <label for="address-1">Mailing Address 1*</label>
             </td>
             <td>
-              <input type="text" id="address-1" value="">
+              <input type="text" name="address-1" id="address-1" required>
+            </td>
+            <td>
+              <label for="address-2">Mailing Address 2</label>
+            </td>
+            <td>
+              <input type="text" name="address-2" id="address-2">
             </td>
           </tr>
           <tr>
@@ -53,7 +67,17 @@
               <label for="city">City*</label>
             </td>
             <td>
-              <input type="text" id="city" value="">
+              <input type="text" name="city" id="city" required>
+            </td>
+            <td>
+              <label for="state">State*</label>
+            </td>
+            <td>
+              <select name="state" id="state" required>
+                <option>State1</option>
+                <option>State2</option>
+                <option>State3</option>
+              </select>
             </td>
           </tr>
 
@@ -62,7 +86,17 @@
               <label for="postal-code">Postal code*</label>
             </td>
             <td>
-              <input type="text" id="postal-code" value="">
+              <input type="text" name="postal-code" id="postal-code" required>
+            </td>
+            <td>
+              <label for="country">Country*</label>
+            </td>
+            <td>
+              <select name="country" id="country" required>
+                <option>Country1</option>
+                <option>Country2</option>
+                <option>Country3</option>
+              </select>
             </td>
           </tr>
 
@@ -71,7 +105,13 @@
               <label for="work-phone">Work phone*</label>
             </td>
             <td>
-              <input type="text" id="work-phone" value="">
+              <input type="text" name="work-phone" id="work-phone" required>
+            </td>
+            <td>
+              <label for="fax">Fax</label>
+            </td>
+            <td>
+              <input type="text" name="fax" id="fax">
             </td>
           </tr>
 
@@ -80,7 +120,13 @@
               <label for="email">Email*</label>
             </td>
             <td>
-              <input type="text" id="email" value="">
+              <input type="text" name="email" id="email" required>
+            </td>
+            <td>
+              <label for="title">Title</label>
+            </td>
+            <td>
+              <input type="text" name="title" id="title">
             </td>
           </tr>
 
@@ -89,12 +135,19 @@
               <label for="department">Department</label>
             </td>
             <td>
-              <input type="text" id="department" value="">
+              <input type="text" name="department" id="department">
+            </td>
+            <td>
+              <label for="company">Company</label>
+            </td>
+            <td>
+              <input type="text" name="company" id="company">
             </td>
           </tr>
         </table>
       </div>
-      <div class="div-form-col">
+    </div>
+      <!-- <div class="div-form-col">
         <table>
           <tr>
             <td>
@@ -169,7 +222,7 @@
 
         </table>
       </div>
-    </div>
+    </div>-->
 
 
     <!-- <div class="form-inputs">
@@ -332,8 +385,9 @@
     </div> -->
 
     <div class="buttons">
-      <button class="btn-next" type="button" name="button">NEXT STEP</button>
+      <button class="btn-next" type="submit" name="button">NEXT STEP</button>
     </div>
+  </form>
   </div><!--end form -->
 </div>
 

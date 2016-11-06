@@ -32,42 +32,41 @@
 }
 .div-form-col{
   /*display: inline-block;*/
-  width: 49%;
+  width: 100%;
+  /*text-align: center;*/
   margin: auto;
-  float: left;
+  /*float: left;*/
   /*background-color: lime;*/
 }
 .right{
   text-align: right;
   /*float: right;*/
 }
-.table-left{
-  float: right;
-}
 table{
+  margin-left: 10%;
+  margin-right: 10%;
   font-weight: bold;
   font-size: 24px;
 }
 td{
   padding-left: 10px;
+  padding-bottom: 20px;
   text-align: right;
 }
 td>select{
   width: 100%;
-}
-input[type=text] {
-  padding: 5px;
-  margin-bottom: 5px;
-  border-radius: 1px;
-  height: 30px;
-  width: 300px;
-}
-select {
   border-radius: 1px;
   height: 40px;
 }
-
-
+input[type=text] {
+  font-size: 24px;
+  /*padding: 5px;
+  margin-bottom: 5px;*/
+  border-radius: 1px;
+  height: 30px;
+  /*width: 100%;*/
+  width: 300px;
+}
 
 .buttons{
   text-align: left;
